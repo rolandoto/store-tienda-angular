@@ -1,0 +1,14 @@
+<!--pipes-->
+<!--directiva global appHighlight-->
+<h3 appHighlight>{{ producto.title | uppercase }}</h3>
+<img [src]="producto.image" alt="">
+<strong>{{ producto.price | currency }}</strong>
+<p>{{ producto.description | slice:0:10 }}</p>
+<!--pipes uppercase para poner la letra en mayuscula 
+currency para colocar signo peso el valor del price
+date para poner actualizar la hora o fecha
+-->
+<p>{{ today | date:'HH:mm' }}</p>
+<button mat-raised-button color="accent" (click)="addCart()">Agregar al carrito</button>
+<!--es lo mismo de rutas con id de platzi avazado-->
+<a [routerLink]="['/producto-detail',producto.id]"> ver details </a>

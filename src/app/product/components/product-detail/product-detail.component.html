@@ -1,0 +1,13 @@
+<div>
+    <img [src]="product.image" alt="">
+</div>
+
+<div>
+    <ul>
+        <li>nombre:{{product.title}}</li>
+        <!--pipe currency-->
+        <li>precio:{{product.price | currency }}</li>
+
+    </ul>
+    <p>{{product.description}}</p>
+</div>

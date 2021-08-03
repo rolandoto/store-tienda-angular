@@ -1,0 +1,9 @@
+ nav>a {
+     padding: 5px;
+     text-decoration: none;
+ }
+ 
+ //para que cambie color cada vez le de routerlink
+ nav>a.active {
+     background: blue;
+ }
